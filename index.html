@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>كارينيه المحبة - النسخة المعتمدة</title>
+    <title>كارينيه المحبة - النسخة المتجاوبة</title>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -42,7 +42,6 @@
 </head>
 <body class="antialiased bg-white text-black">
 
-    <!-- رسالة التحقق التلقائية -->
     <div id="toast" class="toast-container">
         <div class="toast-success-exact">
             <div class="bg-[#07bc0c] rounded-full p-1 ml-3 flex-shrink-0">
@@ -70,10 +69,12 @@
                     <h2 class="text-[11px] lg:text-sm font-semibold">أبو قرقاص "الفكرية" : الجامعة الأهلية</h2>
                 </div>
 
-                <!-- صورتك بالمقاسات اللي ظبطتها يدوي في الـ Inspect -->
+                <!-- تم تعديل مقاسات الصورة هنا لتناسب الموبايل والكمبيوتر تلقائياً -->
                 <img alt="Student" src="hazem.jpg" 
-                     class="absolute rounded-sm object-cover"
-                     style="width: 104px; height: 126px; left: 19px; top: 23px; z-index: 50; object-position: center;">
+                     class="absolute rounded-sm object-cover 
+                            w-[84px] h-[102px] left-[15px] top-[19px] 
+                            lg:w-[104px] lg:h-[126px] lg:left-[19px] lg:top-[23px]"
+                     style="z-index: 50; object-position: center;">
 
                 <h2 class="absolute top-[44px] right-[82px] max-w-5/12 text-[12px] lg:text-[14px] lg:top-[58px] lg:right-[102px] font-semibold text-black">حازم علي عبدالعال</h2>
                 <h2 class="absolute top-[76px] right-[82px] text-[11px] lg:text-[13px] lg:top-[96px] lg:right-[102px] font-semibold text-black/80">حاسبات و ذكاء اصطناعي</h2>
@@ -82,12 +83,10 @@
 
                 <span class="absolute bottom-[3px] left-[170px] lg:left-[210px] text-black text-[16px] font-bold">N1121</span>
 
-                <!-- الـ QR Code المظبوط اللي بيفتح موقع الـ GitHub بتاعك -->
                 <div class="absolute bottom-[17px] right-[10px] lg:bottom-[22px] lg:right-[19px] flex items-center justify-center" style="width: 62px; height: 62px;">
                     <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://hazemz208892.github.io/students-al-mahaba-fae/" class="w-full h-full" alt="QR Code">
                 </div>
 
-                <!-- المعرف الشفاف المتطابق مع اللينك -->
                 <span class="absolute bottom-[16px] left-[58px] lg:bottom-[20px] lg:left-[76px] text-white text-[7px] lg:text-[8px] italic opacity-80">699494a31b2135cb8c9fcfae</span>
                 <span class="absolute bottom-[0px] right-[62px] lg:bottom-[1px] lg:right-[62px] text-white text-[13px] lg:text-[13px] italic font-medium">BY : Mariam</span>
 
