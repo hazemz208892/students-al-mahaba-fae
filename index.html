@@ -3,13 +3,17 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>كارينيه المحبة - النسخة النهائية</title>
+    <title>كارينيه المحبة - النسخة النهائية المعتمدة</title>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; overflow: hidden; background: #fff; }
         .bg-full-bus { position: absolute; height: 100%; width: 100%; left: 0; top: 0; object-fit: cover; z-index: 0; }
         
+        /* كود سحري لإخفاء أي صورة مكسورة (علامة الاستفهام) */
+        img:not([src]), img[src=""] { opacity: 0 !important; }
+        img:error { display: none !important; }
+
         #cart {
             position: relative; z-index: 20; border-radius: 0.375rem; 
             overflow: hidden; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.4);
@@ -69,12 +73,13 @@
                     <h2 class="text-[11px] lg:text-sm font-semibold">أبو قرقاص "الفكرية" : الجامعة الأهلية</h2>
                 </div>
 
-                <!-- صورتك بالمقاس المتجاوب المظبوط -->
+                <!-- صورتك بالمقاسات اللي ظبطناها سوا -->
                 <img alt="Student" src="hazem.jpg" 
                      class="absolute rounded-sm object-cover 
                             w-[84px] h-[102px] left-[15px] top-[19px] 
                             lg:w-[104px] lg:h-[126px] lg:left-[19px] lg:top-[23px]"
-                     style="z-index: 50; object-position: center;">
+                     style="z-index: 50; object-position: center;"
+                     onerror="this.style.display='none'">
 
                 <h2 class="absolute top-[44px] right-[82px] max-w-5/12 text-[12px] lg:text-[14px] lg:top-[58px] lg:right-[102px] font-semibold text-black">حازم علي عبدالعال</h2>
                 <h2 class="absolute top-[76px] right-[82px] text-[11px] lg:text-[13px] lg:top-[96px] lg:right-[102px] font-semibold text-black/80">حاسبات و ذكاء اصطناعي</h2>
@@ -89,8 +94,7 @@
 
                 <span class="absolute bottom-[16px] left-[58px] lg:bottom-[20px] lg:left-[76px] text-white text-[7px] lg:text-[8px] italic opacity-80">699494a31b2135cb8c9fcfae</span>
                 <span class="absolute bottom-[0px] right-[62px] lg:bottom-[1px] lg:right-[62px] text-white text-[13px] lg:text-[13px] italic font-medium">BY : Mariam</span>
-                
-                <!-- تم حذف سطر الختم المكسور الذي يسبب علامة الاستفهام -->
+
             </div>
             <div class="text-[#757575] text-[11px] font-bold mt-2">محرك بحث الطلاب المعتمد © 2026</div>
         </div>
