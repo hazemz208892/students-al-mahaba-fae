@@ -10,7 +10,6 @@
         body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; overflow: hidden; background: #fff; }
         .bg-full-bus { position: absolute; height: 100%; width: 100%; left: 0; top: 0; object-fit: cover; z-index: 0; }
         
-        /* كود سحري لإخفاء أي صورة مكسورة (علامة الاستفهام) */
         img:not([src]), img[src=""] { opacity: 0 !important; }
         img:error { display: none !important; }
 
@@ -73,7 +72,6 @@
                     <h2 class="text-[11px] lg:text-sm font-semibold">أبو قرقاص "الفكرية" : الجامعة الأهلية</h2>
                 </div>
 
-                <!-- صورتك بالمقاسات اللي ظبطناها سوا -->
                 <img alt="Student" src="hazem.jpg" 
                      class="absolute rounded-sm object-cover 
                             w-[84px] h-[102px] left-[15px] top-[19px] 
@@ -86,13 +84,16 @@
                 <h2 class="absolute top-[110px] right-[82px] text-[11px] lg:text-[13px] lg:top-[136px] lg:right-[102px] font-semibold text-black/80">الفرقة الثانية</h2>
                 <h2 class="absolute top-[146px] right-[135px] text-[11px] lg:text-[13px] lg:top-[179px] lg:right-[162px] font-semibold text-black/80">الثاني</h2>
 
-                <span class="absolute bottom-[3px] left-[170px] lg:left-[210px] text-black text-[16px] font-bold">N1121</span>
+                <!-- التعديل الأول: N1221 بالمقاسات اللي في الصورة -->
+                <span class="absolute bottom-[3px] left-[170px] lg:left-[210px] text-black text-[16px] font-bold">N1221</span>
 
                 <div class="absolute bottom-[17px] right-[10px] lg:bottom-[22px] lg:right-[19px] flex items-center justify-center" style="width: 62px; height: 62px;">
                     <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://hazemz208892.github.io/students-al-mahaba-fae/" class="w-full h-full" alt="QR Code">
                 </div>
 
                 <span class="absolute bottom-[16px] left-[58px] lg:bottom-[20px] lg:left-[76px] text-white text-[7px] lg:text-[8px] italic opacity-80">699494a31b2135cb8c9fcfae</span>
+                
+                <!-- التعديل الثاني: BY : Mariam بالمقاسات اللي في الصورة -->
                 <span class="absolute bottom-[0px] right-[62px] lg:bottom-[1px] lg:right-[62px] text-white text-[13px] lg:text-[13px] italic font-medium">BY : Mariam</span>
 
             </div>
