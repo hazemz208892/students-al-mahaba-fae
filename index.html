@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>كارينيه المحبة - النسخة النهائية المعتمدة</title>
+    <title>كارينيه المحبة - النسخة الرسمية</title>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -84,16 +84,18 @@
                 <h2 class="absolute top-[110px] right-[82px] text-[11px] lg:text-[13px] lg:top-[136px] lg:right-[102px] font-semibold text-black/80">الفرقة الثانية</h2>
                 <h2 class="absolute top-[146px] right-[135px] text-[11px] lg:text-[13px] lg:top-[179px] lg:right-[162px] font-semibold text-black/80">الثاني</h2>
 
-                <!-- التعديل الأول: N1221 بالمقاسات اللي في الصورة -->
                 <span class="absolute bottom-[3px] left-[170px] lg:left-[210px] text-black text-[16px] font-bold">N1221</span>
 
+                <!-- تم تحديث رابط الـ QR Code ليقرأ اسم المستخدم الجديد تلقائياً -->
                 <div class="absolute bottom-[17px] right-[10px] lg:bottom-[22px] lg:right-[19px] flex items-center justify-center" style="width: 62px; height: 62px;">
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://hazemz208892.github.io/students-al-mahaba-fae/" class="w-full h-full" alt="QR Code">
+                    <script>
+                        // كود ذكي عشان الـ QR يفضل شغال مهما كان اليوزرنيم الجديد
+                        document.write('<img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=' + window.location.href + '" class="w-full h-full" alt="QR Code">');
+                    </script>
                 </div>
 
                 <span class="absolute bottom-[16px] left-[58px] lg:bottom-[20px] lg:left-[76px] text-white text-[7px] lg:text-[8px] italic opacity-80">699494a31b2135cb8c9fcfae</span>
                 
-                <!-- التعديل الثاني: BY : Mariam بالمقاسات اللي في الصورة -->
                 <span class="absolute bottom-[0px] right-[62px] lg:bottom-[1px] lg:right-[62px] text-white text-[13px] lg:text-[13px] italic font-medium">BY : Mariam</span>
 
             </div>
